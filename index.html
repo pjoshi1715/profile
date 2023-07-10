@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Parth Joshi Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://pjoshi1715.github.io/portfolio/" class="link" 
+          >PJ.(Change This Link)</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Parth Joshi.</span></h1>
+        <h2 class="about__role">Cybersecurity Professional.</h2>
+
+        <div class="about__contact center">
+          <a href="https://example.com">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/pjoshi1715"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/parth-joshi-b910451aa/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>SIEM System using Microsoft Azure</h3>
+            <p class="project__description">
+              Created a Honeypot virtual machine and used custom powershell script to 
+              extract metadata and show geographic locations of attackers. Configured 
+              Azure Sentinel workbook to display a map of where the brute force attacks 
+              were located.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Powershell</li>
+              <li class="project__stack-item">Mocrosoft Azure</li>
+              <li class="project__stack-item">Log Analytics</li>
+            </ul>
+
+            <a
+              href="https://github.com/pjoshi1715/SIEM_Files"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>File Integrity Tool</h3>
+            <p class="project__description">
+              This is a File Integrity Tool which hashes all files in a directory and 
+              iteratively checks for updates on these hashes. If any changes are made, 
+              the File Integrity Tool displays which file hash has been changed. This 
+              means that the integrity of your files stays secure and a user is updated 
+              when a file is changed.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Linux</li>
+              <li class="project__stack-item">Security</li>
+            </ul>
+
+            <a
+              href="https://github.com/pjoshi1715/FileIntegrityTool"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="project">
+            <h3>URL Shortener With Analytics</h3>
+            <p class="project__description">
+            This URL shortener enables users to 
+            shorten long URLs into concise, memorable links. The application 
+            goes beyond link shortening by incorporating analytics tracking. 
+            It records and saves the number of times each shortened link is clicked, 
+            allowing users to measure the effectiveness of their shared content.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">NodeJS</li>
+              <li class="project__stack-item">MongoDB</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a
+              href="https://github.com/pjoshi1715/urlshorty"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="project">
+            <h3>Active Directory System</h3>
+            <p class="project__description">
+              Created an Active Directory system using three physical servers and many 
+              virtualized servers that spanned multiple subnets and multiple sites. This 
+              active directory system was configured with network storage through ISCSI, 
+              automatic updates through WSUS, and network file sharing through DFS. 
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">VMWare Products</li>
+              <li class="project__stack-item">Windows Server</li>
+              <li class="project__stack-item">Powershell</li>
+            </ul>
+
+            <a
+              href="https://docs.google.com/document/d/11GIdnhrhBwzsm20YfLlktXOKKZXY5uGMsKDotE-LswU/edit?usp=sharing"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <div class="project">
+            <h3>Brick Break Game</h3>
+            <p class="project__description">
+              Lightweight java brick break game inspired by a retro video game also called
+              brick breaker. Fun to make and a great way to pass the time. This game was my introduction
+              to java and creating a UI within Java.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">OOP</li>
+              <li class="project__stack-item">NetBeans</li>
+            </ul>
+
+            <a
+              href="https://github.com/pjoshi1715/brickbreak"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="project">
+            <h3>Handwriting Reader AI</h3>
+            <p class="project__description">
+              Created a program that would train itself to recognize numbers and work with handwritten 
+              images that were uploaded. This program was created using Tensorflow on an environment 
+              created on Anaconda and run on the Spyder Python IDE in Anaconda using Python. The bot 
+              recognized handwritten and printed numbers.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Tensorflow</li>
+              <li class="project__stack-item">Machine Learning</li>
+            </ul>
+
+            <a
+              href="https://github.com/pjoshi1715/Parth_Joshi_Tensorflow"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Project Management</li>
+          <li class="skills__list-item btn btn--plain">Active Directory</li>
+          <li class="skills__list-item btn btn--plain">Consulting</li>
+          <li class="skills__list-item btn btn--plain">OS Hardening</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:pjoshi1715@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://pjoshi1715.github.io/portfolio/"
+        class="link footer__link"
+      >
+        Created By Parth Joshi
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
